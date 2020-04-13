@@ -17,7 +17,7 @@ public class Product {
         this.description = description;
     }
 
-    public void printInfo(){
+    public void printInfo() {
         System.out.println("Nazwa: " + name);
         System.out.println("Cena: " + price);
         System.out.println("Opis: " + description);
