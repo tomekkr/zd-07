@@ -1,5 +1,4 @@
 public class SpecialOffer {
-    private Product product;
     private String description;
     private int startDate;
     private int endDate;
@@ -13,8 +12,8 @@ public class SpecialOffer {
     }
 
     public double applyDiscount(Product product, double discount) {
-        double discountPrice = product.getPrice() * (1 - discount);
-        product.setPrice(discountPrice);
+        double discountPrice = product.price * (1 - discount);
+        product.price = discountPrice;
         return discountPrice;
     }
 }
